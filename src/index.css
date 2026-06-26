@@ -1,0 +1,51 @@
+/* Fonte mountains of christmas */
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Blackadder ITC';
+  src: url(./assets/fonts/blackadder.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'i eat crayons';
+  src: url(./assets/fonts/ieatcrayons.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@theme {
+  /* Paleta de cores */
+  --color-pergaminho: #F4E0B6;
+  --color-tinta-escura: #362409;
+  --color-tinta-media: #4D3A29;
+  --color-dourado-claro: #D8C08E;
+  --color-dourado-escuro: #B8935C;
+  --color-rosa-antigo: #C4866F;
+
+  /* Fontes pra chamar como classe */
+  --font-titulo: "Blackadder ITC", cursive;
+  --font-subtitulo: "Mountains of Christmas", cursive;
+  --font-corpo: "i eat crayons", sans-serif;
+}
+
+body {
+  background-color: var(--color-pergaminho);
+  background-image: url('./assets/images/textura-papel.png');
+  background-repeat: repeat;
+  background-blend-mode: multiply; /* Pra mesclar com a textura de papel */
+}
+
+/* Efeito do figma */
+.efeito-titulo {
+  -webkit-text-stroke: 3px var(--color-tinta-escura);
+  text-shadow: 
+    0px 0px 40.824px rgba(196, 134, 111, 0.5), 
+    0px 0px 23.328px rgba(196, 134, 111, 0.5), 
+    0px 0px 13.608px rgba(196, 134, 111, 0.5), 
+    0px 0px 6.804px rgba(196, 134, 111, 0.5), 
+    0px 0px 1.944px rgba(196, 134, 111, 0.5), 
+    0px 0px 0.972px rgba(196, 134, 111, 0.5);
+}
