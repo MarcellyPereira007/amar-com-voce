@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Loading from "./components/Loading";
+import Hero from "./components/Hero";
 import SplashCursor from "./components/SplashCursor";
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
           )}
       </AnimatePresence>
 
-      <div className="fixed inset-0 z-[5] pointer-events-none">
+      <div className="fixed inset-0 z-5 pointer-events-none">
         <SplashCursor
           DENSITY_DISSIPATION={6}
           VELOCITY_DISSIPATION={1.5}
@@ -30,8 +31,9 @@ function App() {
           RAINBOW_MODE={false}
           COLOR="#C4866F"
         />
-
       </div>
+
+      <Hero />
 
     </main>
   )
