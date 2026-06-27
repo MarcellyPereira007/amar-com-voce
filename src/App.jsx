@@ -2,6 +2,8 @@ import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Loading from "./components/Loading";
 import Hero from "./components/Hero";
+import SectionMedos from "./components/SectionMedos";
+import SectionRedoma from "./components/SectionRedoma";
 import SplashCursor from "./components/SplashCursor";
 
 function App() {
@@ -34,6 +36,11 @@ function App() {
       </div>
 
       <Hero />
+
+      <SectionMedos />
+
+      <SectionRedoma />
+      
 
     </main>
   )

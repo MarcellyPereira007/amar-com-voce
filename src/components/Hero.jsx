@@ -28,8 +28,8 @@ function Hero() {
             <div className="absolute inset-0 w-full h-full bg-cover bg-center mix-blend-luminosity pointer-events-none z-0"
                 style={{
                     backgroundImage: `url(${heroBg})`,
-                    WebkitMaskImage: 'linear-gradient(to bottom, black 70%, transparent 100%%)',
-                    maskImage: 'linear-gradient(to bottom, black 70%, transparent 100%%)'
+                    WebkitMaskImage: 'linear-gradient(to bottom, black 70%, transparent 100%)',
+                    maskImage: 'linear-gradient(to bottom, black 70%, transparent 100%)'
                 }}
             />
 
@@ -68,7 +68,7 @@ function Hero() {
                         ref={ratinhosRef}
                         src={ratinhosImg}
                         alt="Dois ratinhos em uma rede"
-                        className='w-full max-w-200 object-contain drop-shadow-x1'
+                        className='w-full max-w-200 object-contain drop-shadow-xl'
                     />
                 </div>
             </div>
